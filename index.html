@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memorize o fruto!</title>
+  <link rel="shortcut icon" href="Assets/Images/passion-fruit.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" async></script>
+</head>
+<body>
+  <h1 class="page-title">MEMORIZE O FRUTO!</h1>
+  <div class="overlay-text visible">
+    MEMORIZE O FRUTO DO ESPÍRITO!
+    <span class="overlay-text-small">Clique para iniciar</span>
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Clique para reiniciar</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    PARABÉNS
+    <span class="overlay-text-small">Clique para reiniciar</span>
+  </div>
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        TEMPO: <span id="time-remaining">180</span>
+      </div>
+      <div class="game-info">
+        JOGADA: <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">AMOR</p>
+        <img class="card-value" src="Assets/Images/love.svg">
+        <p class="pDown">AMOUR</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">LOVE</p>
+        <img class="card-value" src="Assets/Images/love.svg">
+        <p class="pDown">LIEBE</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">ALEGRIA</p>
+        <img class="card-value" src="Assets/Images/happy.svg">
+        <p class="pDown">JOIE</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">JOY</p>
+        <img class="card-value" src="Assets/Images/happy.svg">
+        <p class="pDown">FREUDE</p>
+      </div>
+    </div>    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">PAZ</p>
+        <img class="card-value" src="Assets/Images/peace.svg">
+        <p class="pDown">PAIX</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">PEACE</p>
+        <img class="card-value" src="Assets/Images/peace.svg">
+        <p class="pDown">FRIEDEN</p>
+      </div>
+    </div>    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">PACIÊNCIA</p>
+        <img class="card-value" src="Assets/Images/time.svg">
+        <p class="pDown">PATIENCE</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">PATIENCE</p>
+        <img class="card-value" src="Assets/Images/time.svg">
+        <p class="pDown">GEDULD</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">BONDADE</p>
+        <img class="card-value" src="Assets/Images/gift.svg">
+        <p class="pDown">BIENVEILLANCE</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">KINDNESS</p>
+        <img class="card-value" src="Assets/Images/gift.svg">
+        <p class="pDown">FREUNDLICHKEIT</p>
+      </div>
+    </div>    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">BENIGNIDADE</p>
+        <img class="card-value" src="Assets/Images/chocolate.svg">
+        <p class="pDown">BONTÉ</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">GOODNESS</p>
+        <img class="card-value" src="Assets/Images/chocolate.svg">
+        <p class="pDown">GÜTE</p>
+      </div>
+    </div>    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">FÉ</p>
+        <img class="card-value" src="Assets/Images/pray.svg">
+        <p class="pDown">FOI</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">FAITH</p>
+        <img class="card-value" src="Assets/Images/pray.svg">
+        <p class="pDown">GLAUBE</p>
+      </div>
+    </div>    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">BRANDURA</p>
+        <img class="card-value" src="Assets/Images/sheep.svg">
+        <p class="pDown">DOUCEUR</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">MILDNESS</p>
+        <img class="card-value" src="Assets/Images/sheep.svg">
+        <p class="pDown">MILD</p>
+      </div>
+    </div>    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">AUTODOMÍNIO</p>
+        <img class="card-value" src="Assets/Images/controller.svg">
+        <p class="pDown">MAITRISE DE SOI</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="question" src="Assets/Images/question.svg">
+      </div>
+      <div class="card-front card-face">
+        <p class="pUp">SELF-CONTROL</p>
+        <img class="card-value" src="Assets/Images/controller.svg">
+        <p class="pDown">SELBST-</p>
+        <p class="pDown">BEHERRSCHUNG</p>
+      </div>
+    </div>      
+  </div>
+
+</body>
+
+</html>
