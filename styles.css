@@ -14,10 +14,12 @@
 }
 
 html {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
+  
   margin: 0;
   background: var(--colorTable)
 }
@@ -28,14 +30,14 @@ body {
   font-weight: normal;
   text-align: center;
   font-size: 5em;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   display: none;
 }
 
 .pUp {
   font-family: var(--fontStyle);
-  font-size: 13px;
+  font-size: 11px;
   align-self: flex-start;
   padding-left: 8px;
   margin-top: 0px;
@@ -43,7 +45,7 @@ body {
 
 .pDown {
   font-family: var(--fontStyle);
-  font-size: 13px;
+  font-size: 11px;
   align-self: flex-end;
   padding-right: 8px;
   padding-bottom: 0px;
@@ -61,23 +63,24 @@ body {
 .game-info {
   font-family: var(--fontStyle);
   color: var(--colorFontInfo);
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .game-container {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-gap: 10px;
+  grid-gap: 6px;
   height: 100%;
-  margin: 50px 50px 50px 50px;
+  width: 100%;
+  margin: 5px 5px 5px 5px;
   justify-content: center;
-  perspective: 500px;
+  
 }
 
 .card {
   position: relative;
-  height: 175px;
-  width: 125px;
+  height: 145px;
+  width: 105px;
 }
 
 .card-face {
@@ -215,7 +218,7 @@ body {
   }
   .card {
     position: relative;
-    height: 95px;
+    height: 80px;
     width: 70px;
   }
 
@@ -224,5 +227,3 @@ body {
     align-items: center;
   }
 }
-
-
